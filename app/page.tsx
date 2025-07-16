@@ -26,8 +26,8 @@ export default function Home() {
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="smk-pay-theme">
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 transition-colors">
-        <div className="w-full max-w-sm max-h-[932px] bg-white dark:bg-gray-800 rounded-none sm:rounded-2xl shadow-lg overflow-hidden transition-colors">
+      <div className="min-h-screen w-full bg-gray-100 transition-colors sm:flex sm:items-center sm:justify-center sm:p-0 p-0">
+        <div className="w-full h-screen sm:max-w-sm sm:h-auto bg-white dark:bg-gray-800 sm:rounded-2xl shadow-lg overflow-hidden transition-colors">
           {currentScreen === "login" && <LoginScreen onLogin={handleLogin} />}
           {currentScreen === "2fa" && <TwoFactorScreen phoneNumber={phoneNumber} onVerify={handleTwoFactor} />}
           {currentScreen === "app" && <MainApp onLogout={handleLogout} />}
