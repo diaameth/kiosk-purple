@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
@@ -23,18 +23,18 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: "#F4F4F5", // gris perle
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#7C3AED",
+          DEFAULT: "#0D9488", // menthe foncée
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#111827",
+          DEFAULT: "#111827", // gris graphite
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: "#DC2626",
+          DEFAULT: "#F87171", // rouge pastel
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
@@ -54,22 +54,22 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         violet: {
-          50: "#F5F3FF",
-          600: "#7C3AED",
-          700: "#6D28D9",
+          50: "#ECFDFE",
+          600: "#0D9488",
+          700: "#0F766E",
         },
         gray: {
-          100: "#F3F4F6",
+          100: "#F4F4F5", // fond
           900: "#111827",
         },
         green: {
-          600: "#22C55E",
+          600: "#4ADE80", // vert mousse
         },
         yellow: {
-          600: "#EAB308",
+          600: "#FBBF24", // saumon doux
         },
         red: {
-          600: "#DC2626",
+          600: "#F87171", // rouge pastel
         },
       },
       borderRadius: {
@@ -100,11 +100,11 @@ const config = {
         body: "14px",
       },
       maxHeight: {
-        mobile: "932px", // iPhone 14 Pro Max height
+        mobile: "932px",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
